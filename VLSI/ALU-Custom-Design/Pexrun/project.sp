@@ -1,0 +1,28 @@
+$Generated from generate_tb.py
+$
+.include "/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/design.inc"
+ 
+.include Top_alu.pex.netlist
+.option post runlvl=5
+ 
+.param Tc=8n $CLK period
+.param Di=100p  $Input delay after rising edge of clock
+ 
+xi Top_alu  GND! OUT<2> OUT<1> OUT<3> OUT<0> VDD! A<2> A<1> A<0> CLK A<3>
++ RESET INST<0> INST<1>
+ 
+vdd VDD! GND! 1.2v
+ 
+vINST<0> INST<0> GND! PWL(0ps 0v Di 0v 'Di+0*Tc+50ps' 0v 'Di+1*Tc' 0v 'Di+1*Tc+50ps' 0v 'Di+2*Tc' 0v 'Di+2*Tc+50ps' 0v 'Di+3*Tc' 0v 'Di+3*Tc+50ps' 1.2v 'Di+4*Tc' 1.2v 'Di+4*Tc+50ps' 1.2v 'Di+5*Tc' 1.2v 'Di+5*Tc+50ps' 1.2v 'Di+6*Tc' 1.2v 'Di+6*Tc+50ps' 0v 'Di+7*Tc' 0v 'Di+7*Tc+50ps' 0v 'Di+8*Tc' 0v 'Di+8*Tc+50ps' 0v 'Di+9*Tc' 0v 'Di+9*Tc+50ps' 0v 'Di+10*Tc' 0v 'Di+10*Tc+50ps' 0v 'Di+11*Tc' 0v 'Di+11*Tc+50ps' 0v 'Di+12*Tc' 0v 'Di+12*Tc+50ps' 0v 'Di+13*Tc' 0v 'Di+13*Tc+50ps' 0v 'Di+14*Tc' 0v 'Di+14*Tc+50ps' 0v 'Di+15*Tc' 0v 'Di+15*Tc+50ps' 0v 'Di+16*Tc' 0v 'Di+16*Tc+50ps' 1.2v 'Di+17*Tc' 1.2v 'Di+17*Tc+50ps' 1.2v 'Di+18*Tc' 1.2v)
+vINST<1> INST<1> GND! PWL(0ps 0v Di 0v 'Di+0*Tc+50ps' 0v 'Di+1*Tc' 0v 'Di+1*Tc+50ps' 0v 'Di+2*Tc' 0v 'Di+2*Tc+50ps' 0v 'Di+3*Tc' 0v 'Di+3*Tc+50ps' 0v 'Di+4*Tc' 0v 'Di+4*Tc+50ps' 0v 'Di+5*Tc' 0v 'Di+5*Tc+50ps' 0v 'Di+6*Tc' 0v 'Di+6*Tc+50ps' 0v 'Di+7*Tc' 0v 'Di+7*Tc+50ps' 0v 'Di+8*Tc' 0v 'Di+8*Tc+50ps' 1.2v 'Di+9*Tc' 1.2v 'Di+9*Tc+50ps' 1.2v 'Di+10*Tc' 1.2v 'Di+10*Tc+50ps' 0v 'Di+11*Tc' 0v 'Di+11*Tc+50ps' 0v 'Di+12*Tc' 0v 'Di+12*Tc+50ps' 1.2v 'Di+13*Tc' 1.2v 'Di+13*Tc+50ps' 1.2v 'Di+14*Tc' 1.2v 'Di+14*Tc+50ps' 1.2v 'Di+15*Tc' 1.2v 'Di+15*Tc+50ps' 1.2v 'Di+16*Tc' 1.2v 'Di+16*Tc+50ps' 1.2v 'Di+17*Tc' 1.2v 'Di+17*Tc+50ps' 1.2v 'Di+18*Tc' 1.2v)
+vA<3> A<3> GND! PWL(0ps 0v Di 0v 'Di+0*Tc+50ps' 0v 'Di+1*Tc' 0v 'Di+1*Tc+50ps' 0v 'Di+2*Tc' 0v 'Di+2*Tc+50ps' 0v 'Di+3*Tc' 0v 'Di+3*Tc+50ps' 0v 'Di+4*Tc' 0v 'Di+4*Tc+50ps' 0v 'Di+5*Tc' 0v 'Di+5*Tc+50ps' 0v 'Di+6*Tc' 0v 'Di+6*Tc+50ps' 0v 'Di+7*Tc' 0v 'Di+7*Tc+50ps' 0v 'Di+8*Tc' 0v 'Di+8*Tc+50ps' 0v 'Di+9*Tc' 0v 'Di+9*Tc+50ps' 0v 'Di+10*Tc' 0v 'Di+10*Tc+50ps' 0v 'Di+11*Tc' 0v 'Di+11*Tc+50ps' 0v 'Di+12*Tc' 0v 'Di+12*Tc+50ps' 0v 'Di+13*Tc' 0v 'Di+13*Tc+50ps' 0v 'Di+14*Tc' 0v 'Di+14*Tc+50ps' 1.2v 'Di+15*Tc' 1.2v 'Di+15*Tc+50ps' 1.2v 'Di+16*Tc' 1.2v 'Di+16*Tc+50ps' 1.2v 'Di+17*Tc' 1.2v 'Di+17*Tc+50ps' 1.2v 'Di+18*Tc' 1.2v)
+vA<2> A<2> GND! PWL(0ps 0v Di 0v 'Di+0*Tc+50ps' 0v 'Di+1*Tc' 0v 'Di+1*Tc+50ps' 0v 'Di+2*Tc' 0v 'Di+2*Tc+50ps' 1.2v 'Di+3*Tc' 1.2v 'Di+3*Tc+50ps' 1.2v 'Di+4*Tc' 1.2v 'Di+4*Tc+50ps' 0v 'Di+5*Tc' 0v 'Di+5*Tc+50ps' 0v 'Di+6*Tc' 0v 'Di+6*Tc+50ps' 0v 'Di+7*Tc' 0v 'Di+7*Tc+50ps' 0v 'Di+8*Tc' 0v 'Di+8*Tc+50ps' 0v 'Di+9*Tc' 0v 'Di+9*Tc+50ps' 0v 'Di+10*Tc' 0v 'Di+10*Tc+50ps' 0v 'Di+11*Tc' 0v 'Di+11*Tc+50ps' 0v 'Di+12*Tc' 0v 'Di+12*Tc+50ps' 0v 'Di+13*Tc' 0v 'Di+13*Tc+50ps' 0v 'Di+14*Tc' 0v 'Di+14*Tc+50ps' 0v 'Di+15*Tc' 0v 'Di+15*Tc+50ps' 0v 'Di+16*Tc' 0v 'Di+16*Tc+50ps' 1.2v 'Di+17*Tc' 1.2v 'Di+17*Tc+50ps' 1.2v 'Di+18*Tc' 1.2v)
+vA<1> A<1> GND! PWL(0ps 0v Di 0v 'Di+0*Tc+50ps' 0v 'Di+1*Tc' 0v 'Di+1*Tc+50ps' 0v 'Di+2*Tc' 0v 'Di+2*Tc+50ps' 0v 'Di+3*Tc' 0v 'Di+3*Tc+50ps' 0v 'Di+4*Tc' 0v 'Di+4*Tc+50ps' 1.2v 'Di+5*Tc' 1.2v 'Di+5*Tc+50ps' 1.2v 'Di+6*Tc' 1.2v 'Di+6*Tc+50ps' 0v 'Di+7*Tc' 0v 'Di+7*Tc+50ps' 0v 'Di+8*Tc' 0v 'Di+8*Tc+50ps' 0v 'Di+9*Tc' 0v 'Di+9*Tc+50ps' 0v 'Di+10*Tc' 0v 'Di+10*Tc+50ps' 0v 'Di+11*Tc' 0v 'Di+11*Tc+50ps' 0v 'Di+12*Tc' 0v 'Di+12*Tc+50ps' 0v 'Di+13*Tc' 0v 'Di+13*Tc+50ps' 0v 'Di+14*Tc' 0v 'Di+14*Tc+50ps' 1.2v 'Di+15*Tc' 1.2v 'Di+15*Tc+50ps' 1.2v 'Di+16*Tc' 1.2v 'Di+16*Tc+50ps' 0v 'Di+17*Tc' 0v 'Di+17*Tc+50ps' 0v 'Di+18*Tc' 0v)
+vA<0> A<0> GND! PWL(0ps 0v Di 0v 'Di+0*Tc+50ps' 0v 'Di+1*Tc' 0v 'Di+1*Tc+50ps' 0v 'Di+2*Tc' 0v 'Di+2*Tc+50ps' 1.2v 'Di+3*Tc' 1.2v 'Di+3*Tc+50ps' 1.2v 'Di+4*Tc' 1.2v 'Di+4*Tc+50ps' 1.2v 'Di+5*Tc' 1.2v 'Di+5*Tc+50ps' 1.2v 'Di+6*Tc' 1.2v 'Di+6*Tc+50ps' 1.2v 'Di+7*Tc' 1.2v 'Di+7*Tc+50ps' 1.2v 'Di+8*Tc' 1.2v 'Di+8*Tc+50ps' 1.2v 'Di+9*Tc' 1.2v 'Di+9*Tc+50ps' 1.2v 'Di+10*Tc' 1.2v 'Di+10*Tc+50ps' 1.2v 'Di+11*Tc' 1.2v 'Di+11*Tc+50ps' 1.2v 'Di+12*Tc' 1.2v 'Di+12*Tc+50ps' 1.2v 'Di+13*Tc' 1.2v 'Di+13*Tc+50ps' 1.2v 'Di+14*Tc' 1.2v 'Di+14*Tc+50ps' 0v 'Di+15*Tc' 0v 'Di+15*Tc+50ps' 0v 'Di+16*Tc' 0v 'Di+16*Tc+50ps' 1.2v 'Di+17*Tc' 1.2v 'Di+17*Tc+50ps' 1.2v 'Di+18*Tc' 1.2v)
+
+vRESET RESET GND! PWL(0ps 0v Di 0v 'Di+0*Tc+50ps' 1.2v 'Di+1*Tc' 1.2v 'Di+1*Tc+50ps' 0v 'Di+2*Tc' 0v 'Di+2*Tc+50ps' 0v 'Di+3*Tc' 0v 'Di+3*Tc+50ps' 0v 'Di+4*Tc' 0v 'Di+4*Tc+50ps' 0v 'Di+5*Tc' 0v 'Di+5*Tc+50ps' 0v 'Di+6*Tc' 0v 'Di+6*Tc+50ps' 0v 'Di+7*Tc' 0v 'Di+7*Tc+50ps' 0v 'Di+8*Tc' 0v 'Di+8*Tc+50ps' 0v 'Di+9*Tc' 0v 'Di+9*Tc+50ps' 0v 'Di+10*Tc' 0v 'Di+10*Tc+50ps' 0v 'Di+11*Tc' 0v 'Di+11*Tc+50ps' 0v 'Di+12*Tc' 0v 'Di+12*Tc+50ps' 0v 'Di+13*Tc' 0v 'Di+13*Tc+50ps' 0v 'Di+14*Tc' 0v 'Di+14*Tc+50ps' 0v 'Di+15*Tc' 0v 'Di+15*Tc+50ps' 0v 'Di+16*Tc' 0v 'Di+16*Tc+50ps' 0v 'Di+17*Tc' 0v 'Di+17*Tc+50ps' 0v 'Di+18*Tc' 0v 'Di+18*Tc+50ps' 0v 'Di+19*Tc' 0v)
+vCLK CLK GND! PWL(0ps 0v Di 0v 'Di+0*Tc+50ps' 0v 'Di+1*Tc' 0v 'Di+1*Tc+50ps' 1.2v 'Di+2*Tc' 1.2v 'Di+2*Tc+50ps' 0v 'Di+3*Tc' 0v 'Di+3*Tc+50ps' 1.2v 'Di+4*Tc' 1.2v 'Di+4*Tc+50ps' 0v 'Di+5*Tc' 0v 'Di+5*Tc+50ps' 1.2v 'Di+6*Tc' 1.2v 'Di+6*Tc+50ps' 0v 'Di+7*Tc' 0v 'Di+7*Tc+50ps' 1.2v 'Di+8*Tc' 1.2v 'Di+8*Tc+50ps' 0v 'Di+9*Tc' 0v 'Di+9*Tc+50ps' 1.2v 'Di+10*Tc' 1.2v 'Di+10*Tc+50ps' 0v 'Di+11*Tc' 0v 'Di+11*Tc+50ps' 1.2v 'Di+12*Tc' 1.2v 'Di+12*Tc+50ps' 0v 'Di+13*Tc' 0v 'Di+13*Tc+50ps' 1.2v 'Di+14*Tc' 1.2v 'Di+14*Tc+50ps' 0v 'Di+15*Tc' 0v 'Di+15*Tc+50ps' 1.2v 'Di+16*Tc' 1.2v 'Di+16*Tc+50ps' 0v 'Di+17*Tc' 0v 'Di+17*Tc+50ps' 1.2v 'Di+18*Tc' 1.2v 'Di+18*Tc+50ps' 0v 'Di+19*Tc' 0v)
+ 
+.tr 10ps '21*Tc'  $Run for number of input clock cycles plus 2
+ 
+.end
