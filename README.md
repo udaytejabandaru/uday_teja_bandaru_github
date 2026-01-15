@@ -1,6 +1,6 @@
 PORTFOLIO OVERVIEW
 ------------------
-This repository serves as a technical portfolio of academic and personal projects in digital hardware design, VLSI systems, and CAD-oriented computing. The work focuses on RTL design, ASIC implementation flows, FPGA-style prototyping concepts, computer architecture exploration, and EDA automation, with strong emphasis on design correctness, methodology, and architectural clarity.
+This repository serves as a technical portfolio of academic and personal projects in digital hardware design, VLSI systems, CAD-oriented computing, DFT. The work focuses on RTL design, ASIC implementation flows, FPGA-style prototyping concepts, computer architecture exploration, and EDA automation, with strong emphasis on design correctness, methodology, and architectural clarity.
 
 Several projects demonstrate complete RTL-to-implementation workflows, including logic synthesis, physical design scripting, timing analysis, and generation of post-route deliverables.
 
